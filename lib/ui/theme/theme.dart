@@ -1,7 +1,30 @@
-import 'package:flutter/material.dart';
+import 'dart:typed_data';
 
-final lightTheme = ThemeData(brightness: Brightness.light);
+import 'package:flutter/material.dart';
+import 'colors.dart';
+
+final lightTheme = ThemeData(
+  colorScheme: ColorScheme.dark(surface: AppColors.background.light),
+  textTheme: lightTextTheme,
+);
+
 final darkTheme = ThemeData(
-  brightness: Brightness.dark,
-  colorScheme: ColorScheme.dark(surface: const Color.fromARGB(255, 70, 62, 62)),
+  colorScheme: ColorScheme.dark(surface: AppColors.background.dark),
+);
+
+final TextTheme lightTextTheme = TextTheme(
+  bodyMedium: const TextStyle(
+    fontFamily: 'Times new roman',
+    color: Color(0xff000000),
+    fontWeight: FontWeight.bold,
+    fontSize: 24,
+  ),
+);
+final TextTheme darkTextTheme = TextTheme(
+  bodyMedium: const TextStyle(
+    fontFamily: 'Times new roman',
+    color: Color(0xfff7f7f7),
+    fontWeight: FontWeight.bold,
+    fontSize: 24,
+  ),
 );
