@@ -1,21 +1,7 @@
-import 'index.dart';
+import "package:flutter/material.dart";
 
-final appRouter = AppRouter();
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  Bloc.observer = AppBlocObserver();
-  runApp(
-    MultiBlocProvider(
-      providers: [
-        BlocProvider<CounterBloc>(
-          create: (BuildContext context) => CounterBloc(0),
-        ),
-      ],
-      child: MyApp(),
-    ),
-  );
+void main() {
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,11 +9,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: appRouter.config(),
-      theme: lightTheme,
-      darkTheme: darkTheme,
-      themeMode: ThemeMode.dark,
-    );
+    return MaterialApp(home: Text("Timer"));
   }
 }
