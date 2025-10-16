@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeMode.dark,
-      home: Scaffold(body: Text("Пупупу")),
+      home: Scaffold(body: Text("Timer")),
     );
   }
 }
