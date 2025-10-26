@@ -12,17 +12,17 @@ final darkTheme = ThemeData(
 
 final TextTheme lightTextTheme = TextTheme(
   bodyMedium: const TextStyle(
-    fontFamily: 'Times new roman',
+    fontFamily: 'monospace',
     color: Color(0xff000000),
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.normal,
     fontSize: 24,
   ),
 );
 final TextTheme darkTextTheme = TextTheme(
   bodyMedium: const TextStyle(
-    fontFamily: 'Times new roman',
+    fontFamily: 'monospace',
     color: Color(0xfff7f7f7),
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.normal,
     fontSize: 24,
   ),
 );
